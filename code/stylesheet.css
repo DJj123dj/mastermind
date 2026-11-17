@@ -1,0 +1,166 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+table {
+    border-spacing: 4px;
+    margin-top: 5px;
+}
+
+p {
+    margin: 0px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    user-select: none;
+}
+
+.container {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: #999 0px 0px 30px;
+}
+
+.cell {
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.dashboard {
+    width: fit-content;
+    margin-top: 30px;
+    flex-grow: 1;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: #999 0px 0px 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    user-select: none;
+}
+
+.dashboard-rij {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.dashboard-tekst {
+    width: 100%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.knop {
+    appearance: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.knop:hover {
+    opacity: 70%;
+}
+
+.kleine-knop {
+    appearance: none;
+    font-size: 13px;
+    font-family: sans-serif;
+    border: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.kleine-knop:hover {
+    opacity: 70%;
+}
+
+
+.groene-knop {
+    background-color: #00a63e;
+    color: white;
+}
+
+.rode-knop {
+    background-color: #e7000b;
+    color: white;
+}
+
+.blauwe-knop {
+    background-color: #0092b8;
+    color: white;
+}
+
+.grijze-knop {
+    background-color: #777777;
+    color: white;
+}
+
+.kleur-knop {
+    appearance: none;
+    background-color: #999;
+    color: white;
+    width: 70px;
+    height: 70px;
+
+    font-size: 15px;
+    font-family: sans-serif;
+    border: 0px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    outline: 2px solid #999;
+}
+.kleur-knop:hover {
+    opacity: 70%;
+}
+
+.actieve-rij {
+    outline: 3px solid #999;
+    border-radius: 3px;
+}
+
+.auto-select {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 250px;
+    height: 30px;
+}
+
+.moeilijkheid-select {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 250px;
+    height: 30px;
+}

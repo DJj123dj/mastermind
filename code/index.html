@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <script src="code.js"></script>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+    <body>
+        <main>
+            <div id="spel-container" class="container"></div>
+            <div id="feedback-container" class="container"></div>
+        </main>
+        <div class="dashboard">
+            <div class="dashboard-tekst">
+                <p id="gok-teller">Gok Nr. 1</p>
+                <p id="hint-teller">Aantal gebruikte hints: 0</p>
+            </div>
+            <div id="kleur-knoppen" class="dashboard-rij"></div>
+            <div class="dashboard-rij">
+                <button id="verwijder-knop" onclick="clickVerwijder()" class="knop rode-knop">Laatste Kleur Verwijderen</button>
+                <button id="auto-knop" onclick="clickAutomatischInvullen()" class="knop blauwe-knop">Automatisch Invullen</button>
+                <button id="hint-knop" onclick="clickHint()" class="knop blauwe-knop">Toon Hint</button>
+                <button id="bevestig-knop" onclick="clickBevestig()" class="knop groene-knop">Gok Bevestigen</button>
+            </div>
+            <div class="dashboard-rij">
+                <button id="reset-knop" onclick="clickReset(null)" class="kleine-knop grijze-knop">Nieuw Spel</button>
+                <button id="reset-lvl1-knop" onclick="clickReset(1)" class="kleine-knop grijze-knop">Voorbeeld Lvl. 1</button>
+                <button id="reset-lvl2-knop" onclick="clickReset(2)" class="kleine-knop grijze-knop">Voorbeeld Lvl. 2</button>
+                <button id="reset-lvl3-knop" onclick="clickReset(3)" class="kleine-knop grijze-knop">Voorbeeld Lvl. 3</button>
+            </div>
+
+        </div>
+        <select id="auto-select" class="auto-select">
+            <option value="dumb" selected>Auto Modus (Basis)</option>
+            <option value="smart">Auto Modus (Verbeterd)</option>
+        </select>
+        <select id="moeilijkheid-select" class="moeilijkheid-select">
+            <option value="makkelijk">Makkelijk (12 Pogingen)</option>
+            <option value="normaal" selected>Normaal (10 Pogingen)</option>
+            <option value="moeilijk">Moeilijk (8 Pogingen)</option>
+        </select>
+    </body>
+</html>
